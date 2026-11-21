@@ -396,3 +396,72 @@ print(firstPerson)  # {'first_name': 'Hana', 'last_name': 'Malika'}
 # Menghapus semua item dengan method "clear"
 firstPerson.clear()
 print(firstPerson)  # {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ===== 11. Functions =====
+
+# Membuat Function baru tanpa Arguments
+def belajar_python():
+    print("Halo")
+
+belajar_python()  # Halo
+
+
+# Function dengan satu Arguments "name"
+def belajar_python(name):
+    print("Halo, Saya %s" % name)
+
+belajar_python("Rizqi")  # Halo, Saya Rizqi
+
+
+# Function dengan dua Arguments: "name" dan "age"
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur saya %d" % (name, age))
+
+belajar_python("Rizqi", 30)  # Halo, Saya Rizqi. Umur saya 30
+
+
+# Function dengan Arbitrary Arguments "names"
+def belajar_python(*names):
+    for name in names:
+        print("Halo, Saya %s" % name)
+
+# Kita bisa mengirimkan banyak value sekaligus
+belajar_python("Rizqi", "Fika", "Yudi")
+
+
+# Function dengan Keyword Arguments
+def belajar_python(name, age):
+    print("Halo, Saya %s. Umur Saya %d" % (name, age))
+
+# Tanpa nama "key", urutan harus sesuai (name, age)
+belajar_python("Rizqi", 30)  # Halo, Saya Rizqi. Umur Saya 30
+
+# Dengan nama "key", urutan boleh berbeda (age, name)
+belajar_python(age=25, name="Fika")  # Halo, Saya Fika. Umur Saya 25
+
+
+# Function dengan Arbitrary Keyword Arguments
+def belajar_python(**student):
+    print("Halo, Saya %s. Umur Saya %d" % (student['name'], student['age']))
+
+belajar_python(age=20, name="Rizqi")  # Halo, Saya Rizqi. Umur Saya 20
+
+
+# Function dengan Default Value untuk Arguments "name"
+def belajar_python(name="Alien"):
+    print("Halo, Saya %s" % name)
+
+belajar_python()  # Halo, Saya Alien

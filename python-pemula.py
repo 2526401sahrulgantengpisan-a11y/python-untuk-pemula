@@ -43,3 +43,32 @@ bersepeda dan bermain game.
 print(myFirstName + " " + myLastName)
 print("Umur saya " + myAge)
 print(myHobby)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ===== 3. Boolean =====
+
+# Contoh penulisan boolean yang benar
+a = True
+b = False
+
+print(a)
+print(b)
+
+# Contoh penulisan boolean yang salah
+# Jika dijalankan, pada baris ini akan error
+# c = true
+
+# print(c)

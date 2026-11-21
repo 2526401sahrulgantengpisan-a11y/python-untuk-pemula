@@ -465,3 +465,55 @@ def belajar_python(name="Alien"):
     print("Halo, Saya %s" % name)
 
 belajar_python()  # Halo, Saya Alien
+
+
+
+
+
+
+
+
+
+
+# ===== 12. Classes dan Objects =====
+
+# Membuat Class Cat dengan property color
+class Cat:
+    color = "black"
+
+# Membuat object dari sebuah Class
+cat1 = Cat()
+# Mengakses property yang didefinisikan di dalam Class
+print(cat1.color)  # black
+
+
+# Class Cat dengan method constructor untuk mengubah nilai property color
+class Cat:
+    color = "black"
+
+    def __init__(self, color):
+        self.color = color
+
+cat1 = Cat("orange")
+print(cat1.color)  # orange
+
+
+# Class Cat dengan method say
+class Cat:
+    def say(self):
+        print("Meong..meong")
+
+cat1 = Cat()
+# Mengakses method di dalam class dari objek yang diinisiasi
+cat1.say()  # Meong..meong
+
+
+# Mengubah penamaan parameter "self" menjadi "myParam"
+class Cat:
+    color = "black"
+
+    def say(myParam):
+        print("My color is %s" % myParam.color)
+
+cat1 = Cat()
+cat1.say()  # My color is black

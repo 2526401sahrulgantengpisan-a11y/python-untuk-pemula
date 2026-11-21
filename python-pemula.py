@@ -333,3 +333,66 @@ fruits = ["Apel", "Mangga", "Pisang"]
 otherFruits = ["Durian", "Semangka", "Jeruk"]
 allFruits = fruits + otherFruits
 print(allFruits)  # ['Apel', 'Mangga', 'Pisang', 'Durian', 'Semangka', 'Jeruk']
+
+
+
+
+
+
+
+
+
+
+# ===== 10. Dictionaries =====
+
+# Membuat Dictionaries untuk menyimpan biodata seseorang
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+# Mengakses item pada Dictionaries dengan 2 cara
+# Cara pertama
+print(firstPerson['first_name'])  # Hana
+# Cara kedua dengan method "get"
+print(firstPerson.get('age'))  # 10
+
+# Mendapatkan semua "keys"
+print(firstPerson.keys())  # dict_keys(['first_name', 'last_name', 'age'])
+
+# Mendapatkan semua "values"
+print(firstPerson.values())  # dict_values(['Hana', 'Malika', 10])
+
+# Menambahkan item berat badan (weight)
+firstPerson['weight'] = 12
+print(firstPerson)  # {'first_name': 'Hana', 'last_name': 'Malika', 'age': 10, 'weight': 12}
+
+# Mengubah atau mengupdate value dari item, ada 2 cara
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+
+# Cara pertama
+firstPerson['age'] = 15
+
+# Cara kedua dengan method "update"
+# Jika key ditemukan maka diupdate, jika belum ada maka ditambahkan
+firstPerson.update({"age": 15})
+firstPerson.update({"hair_color": "black"})
+print(firstPerson)  # {'first_name': 'Hana', 'last_name': 'Malika', 'age': 15, 'hair_color': 'black'}
+
+# Menghapus item dengan method "pop" (wajib menyebut nama "key")
+firstPerson = {
+    "first_name": "Hana",
+    "last_name": "Malika",
+    "age": 10
+}
+firstPerson.pop("age")
+print(firstPerson)  # {'first_name': 'Hana', 'last_name': 'Malika'}
+
+# Menghapus semua item dengan method "clear"
+firstPerson.clear()
+print(firstPerson)  # {}

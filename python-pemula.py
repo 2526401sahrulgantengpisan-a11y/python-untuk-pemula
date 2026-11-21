@@ -270,3 +270,66 @@ for x in range(10):
     if x % 2 == 0:
         continue
     print(x)
+
+
+
+
+
+
+
+
+
+    
+
+# ===== 9. Lists =====
+
+# Membuat lists yang berisi nama-nama hewan
+animals = ["Ayam", "Bebek", "Cicak"]
+
+# Mengakses item berdasarkan urutannya (indexing). Indexing dimulai dari 0.
+print(animals[1])  # Bebek
+
+# Negative indexing: -1 adalah item terakhir, -2 item kedua dari terakhir
+print(animals[-1])  # Cicak
+print(animals[-2])  # Bebek
+
+# Menambah item di posisi terakhir dengan "append"
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.append("Domba")
+print(animals)  # ['Ayam', 'Bebek', 'Cicak', 'Domba']
+
+# Menambah item di posisi tertentu dengan "insert"
+# Contoh: menambahkan 1 item di posisi ketiga (indexing = 2)
+animals.insert(2, "Buaya")
+print(animals)  # ['Ayam', 'Bebek', 'Buaya', 'Cicak', 'Domba']
+
+# Menghapus item tertentu dengan "remove"
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.remove("Bebek")
+print(animals)  # ['Ayam', 'Cicak']
+
+# Menghapus item terakhir dengan "pop"
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.pop()
+print(animals)  # ['Ayam', 'Bebek']
+
+# Menghapus item berdasarkan posisinya dengan "pop"
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.pop(0)
+print(animals)  # ['Bebek', 'Cicak']
+
+# Menghapus semua item dengan "clear"
+animals = ["Ayam", "Bebek", "Cicak"]
+animals.clear()
+print(animals)  # []
+
+# Menggabungkan sebuah lists dengan lists lainnya
+animals = ["Ayam", "Bebek", "Cicak"]
+otherAnimals = ["Domba", "Elang", "Gajah"]
+animals.extend(otherAnimals)
+print(animals)  # ['Ayam', 'Bebek', 'Cicak', 'Domba', 'Elang', 'Gajah']
+
+fruits = ["Apel", "Mangga", "Pisang"]
+otherFruits = ["Durian", "Semangka", "Jeruk"]
+allFruits = fruits + otherFruits
+print(allFruits)  # ['Apel', 'Mangga', 'Pisang', 'Durian', 'Semangka', 'Jeruk']
